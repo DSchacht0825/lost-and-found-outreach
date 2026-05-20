@@ -16,7 +16,7 @@ function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24">
           <a href="#" className="flex items-center">
-            <img src="/logoheader.png" alt="Lost & Found Outreach" className="h-20 w-auto" />
+            <img src="/logoheader.jpg" alt="Lost & Found Outreach" className="h-20 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
