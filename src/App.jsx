@@ -14,9 +14,9 @@ function Navigation() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-charcoal-900 backdrop-blur-sm border-b border-gold-600/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-24">
           <a href="#" className="flex items-center">
-            <img src="/logo.jpg" alt="Lost & Found Outreach" className="h-14 w-auto" />
+            <img src="/logoheader.png" alt="Lost & Found Outreach" className="h-20 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
