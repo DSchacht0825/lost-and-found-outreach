@@ -5,6 +5,7 @@ function Navigation() {
 
   const links = [
     { href: '#about', label: 'About' },
+    { href: '#board', label: 'Board' },
     { href: '#youth', label: 'Youth' },
     { href: '#homelessness', label: 'Outreach' },
     { href: '#recovery', label: 'Recovery' },
@@ -198,6 +199,53 @@ function About() {
               </p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function BoardMembers() {
+  const members = [
+    { name: 'Mario Moreno', title: 'President', image: '/mario.PNG' },
+    { name: 'James Thomson', title: 'Vice President', image: '/jamesthomson.jpeg' },
+    { name: 'Edward Gonzales', title: 'Secretary', image: '/Edwardgonzales.PNG' },
+    { name: 'Robert Vasquez', title: 'Director of Housing', image: '/robertvasquez.PNG' },
+    { name: 'Aurora Ramirez', title: 'Treasurer', image: '/auroraramirez.PNG' },
+    { name: 'Aaron Zuniga', title: 'Director of Prison Outreach', image: '/aaronziniga.PNG' },
+    { name: 'Fernando Sosa', title: 'Director of Outreach', image: '/fernandososa.PNG' },
+  ]
+
+  return (
+    <section id="board" className="py-20 bg-charcoal-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gold-500 mb-4">Our Board Members</h2>
+          <div className="w-24 h-1 bg-gold-600 mx-auto mb-6"></div>
+          <p className="text-charcoal-300 max-w-3xl mx-auto text-lg">
+            Meet the dedicated leaders guiding Lost & Found Outreach, Inc. in our mission to serve the community.
+          </p>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          {members.map((member, index) => (
+            <div
+              key={index}
+              className="bg-charcoal-900 rounded-2xl overflow-hidden border border-charcoal-700 hover:border-gold-600/50 transition-all hover:transform hover:-translate-y-1"
+            >
+              <div className="aspect-square overflow-hidden">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6 text-center">
+                <h3 className="text-xl font-bold text-gold-400 mb-1">{member.name}</h3>
+                <p className="text-charcoal-300">{member.title}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -647,6 +695,7 @@ function App() {
       <Navigation />
       <Hero />
       <About />
+      <BoardMembers />
       <Youth />
       <Homelessness />
       <Recovery />
