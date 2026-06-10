@@ -207,13 +207,13 @@ function About() {
 
 function BoardMembers() {
   const members = [
-    { name: 'Mario Moreno', title: 'President', image: '/mario.PNG' },
-    { name: 'James Thomson', title: 'Vice President', image: '/jamesthomson.jpeg' },
-    { name: 'Edward Gonzales', title: 'Secretary', image: '/Edwardgonzales.PNG' },
-    { name: 'Robert Vasquez', title: 'Director of Housing', image: '/robertvasquez.PNG' },
-    { name: 'Aurora Ramirez', title: 'Treasurer', image: '/auroraramirez.PNG' },
-    { name: 'Aaron Zuniga', title: 'Director of Prison Outreach', image: '/aaronziniga.PNG' },
-    { name: 'Fernando Sosa', title: 'Director of Outreach', image: '/fernandososa.PNG' },
+    { name: 'Mario Moreno', title: 'President', image: '/mario-optimized.jpg' },
+    { name: 'James Thomson', title: 'Vice President', image: '/jamesthomson-optimized.jpg' },
+    { name: 'Edward Gonzales', title: 'Secretary', image: '/edwardgonzales-optimized.jpg' },
+    { name: 'Robert Vasquez', title: 'Director of Housing', image: '/robertvasquez-optimized.jpg' },
+    { name: 'Aurora Ramirez', title: 'Treasurer', image: '/auroraramirez-optimized.jpg' },
+    { name: 'Aaron Zuniga', title: 'Director of Prison Outreach', image: '/aaronzuniga-optimized.jpg' },
+    { name: 'Fernando Sosa', title: 'Director of Outreach', image: '/fernandososa-optimized.jpg' },
   ]
 
   return (
